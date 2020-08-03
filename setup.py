@@ -8,8 +8,8 @@ setup(
   description = 'Virustotal API v2 python module for automation',
   author = 'Ananth Gottimukala',
   author_email = 'ananth.venk88@gmail.com',
-  url = 'https://github.com/ananth-she11z/VirusTotal',
-  download_url = 'https://github.com/ananth-she11z/VirusTotal/archive/11.0.tar.gz',
+  url = 'https://github.com/ananth-she11z/vTotalAPI',
+  download_url = 'https://github.com/ananth-she11z/vTotalAPI/archive/11.0.tar.gz',
   keywords = ['Virustotal', 'APIv2', 'Automation', 'API'],
   install_requires=[
 
