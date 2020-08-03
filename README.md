@@ -3,7 +3,7 @@ Author: Ananth Gottimukala (she11z)
 GitHub: https://github.com/ananth-she11z
 LinkedIn: https://www.linkedin.com/in/ananth-she11z
 
-vTotalAPI is a python package to work with vTotalAPI API v2. It has been loaded with most of the API calls for Files, Domains, IPs and URLs. Depending on the type of API key the functionalities and options have been precisely loaded into the module. Below list describes the methods which can be utilized using vTotalAPI module -
+vTotalAPI is a python package to work with Virustotal API v2. It has been loaded with most of the API calls for Files, Domains, IPs and URLs. Depending on the type of API key the functionalities and options have been precisely loaded into the module. Below list describes the methods which can be utilized using vTotalAPI module -
 
   - File Report
   - File Scan
