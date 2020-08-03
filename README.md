@@ -47,42 +47,42 @@ _hash = Hash of the file
 sleep = Sleep time for each request/hash if in bulk
 allinfo = Gives more information on the file (Note: This feature is only available for Private/Enterprise API key)
 ```sh
-data = FileReport(_hash=string, sleep=int, allinfo=boolean)
+data = vt.FileReport(_hash=string, sleep=int, allinfo=boolean)
 ```
 
 - FileScan
 file = File to be scanned
 sleep = Sleep time for each request/hash if in bulk
 ```sh
-data = FileScan(file=binary, sleep=int)
+data = vt.FileScan(file=binary, sleep=int)
 ```
 
 - FileDownload (Note: This Endpoint is only available for Private/Enterprise API key)
 _hash = Hash of the file
 sleep = Sleep time for each request/hash if in bulk
 ```sh
-data = FileDownload(_hash=string, sleep=int)
+data = vt.FileDownload(_hash=string, sleep=int)
 ```
 
 - FileBehaviour (Note: This Endpoint is only available for Private/Enterprise API key)
 _hash = Hash of the file
 sleep = Sleep time for each request/hash if in bulk
 ```sh
-data = FileBehaviour(_hash=string, sleep=int)
+data = vt.FileBehaviour(_hash=string, sleep=int)
 ```
 
 - FileNetworkTraffic (Note: This Endpoint is only available for Private/Enterprise API key)
 _hash = Hash of the file
 sleep = Sleep time for each request/hash if in bulk
 ```sh
-data = FileNetworkTraffic(_hash=string, sleep=int)
+data = vt.FileNetworkTraffic(_hash=string, sleep=int)
 ```
 
 - FileFeed (Note: This Endpoint is only available for Private/Enterprise API key)
 package = Indicates a time window to pull reports on all items received during such window. Timestamp less than 24 hours ago, UTC.
 sleep = Sleep time for each request/hash if in bulk
 ```sh
-data = FileFeed(package=string, sleep=int)
+data = vt.FileFeed(package=string, sleep=int)
 ```
 Following can be used to pack the data received -
 
@@ -94,7 +94,7 @@ with open('package.tar.bz2', 'wb') as fd:
 date = A date for which we want to access the clustering details in YYYY-MM-DD format.
 sleep = Sleep time for each request/hash if in bulk
 ```sh
-data = FileCluster(date=string, sleep=int)
+data = vt.FileCluster(date=string, sleep=int)
 ```
 
 - FileSearch (Note: This Endpoint is only available for Private/Enterprise API key)
@@ -102,7 +102,7 @@ query = Search query
 sleep = Sleep time for each request/hash if in bulk
 offset = The offset value returned by a previous identical query, allows you to paginate over the results
 ```sh
-data = FileSearch(query=string, sleep=int, offset=string)
+data = vt.FileSearch(query=string, sleep=int, offset=string)
 ```
 ### URL
 - URLReport
@@ -111,35 +111,35 @@ sleep = Sleep time for each request/hash if in bulk
 scan = This is an optional parameter that when set to "1" will automatically submit the URL for analysis if no report is found for it in vTotalAPI's database. In this case the result will contain a scan_id field that can be used to query the analysis report later on.
 allinfo = Return additional information about the file
 ```sh
-data = URLReport(resource=string, sleep=int, scan=int32, allinfo=boolean)
+data = vt.URLReport(resource=string, sleep=int, scan=int32, allinfo=boolean)
 ```
 
 - URLScan
 url = The URL that should be scanned
 sleep = Sleep time for each request/hash if in bulk
 ```sh
-data = URLScan(url=string, sleep=int)
+data = vt.URLScan(url=string, sleep=int)
 ```
 
 - URLFeed (Note: This Endpoint is only available for Private/Enterprise API key)
 package = Indicates a time window to pull reports on all items received during such window
 sleep = Sleep time for each request/hash if in bulk
 ```sh
-data = URLFeed(package=string, sleep=int)
+data = vt.URLFeed(package=string, sleep=int)
 ```
 ### DOMAIN
 - DomainReport
 domain = A domain name
 sleep = Sleep time for each request/hash if in bulk
 ```sh
-data = DomainReport(domain=string, sleep=int)
+data = vt.DomainReport(domain=string, sleep=int)
 ```
 ### IP
 - IPReport
 ip = An IP address
 sleep = Sleep time for each request/hash if in bulk
 ```sh
-data = IPReport(ip=string, sleep=int)
+data = vt.IPReport(ip=string, sleep=int)
 ```
 ### COMMENTS
 - GETComments
@@ -147,7 +147,7 @@ resource = Either an md5/sha1/sha256 hash of the file or the URL itself you want
 before = A datetime token that allows you to iterate over all comments on a specific item whenever it has been commented on more than 25 times.
 sleep = Sleep time for each request/hash if in bulk
 ```sh
-data = GETComments(resource=string, sleep=int, before=string)
+data = vt.GETComments(resource=string, sleep=int, before=string)
 ```
 
 - PUTComments
@@ -155,7 +155,7 @@ resource = Either an md5/sha1/sha256 hash of the file or the URL itself you want
 comment = The comment's text
 sleep = Sleep time for each request/hash if in bulk
 ```sh
-data = PUTComments(resource=string, sleep=int, comment=string)
+data = vt.PUTComments(resource=string, sleep=int, comment=string)
 ```
 ### License
 ----
