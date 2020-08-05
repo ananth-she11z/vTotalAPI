@@ -25,8 +25,6 @@ vTotalAPI is a python package to work with Virustotal API v2. It has been loaded
 
 vTotalAPI requires [Python3](https://www.python.org/downloads/) to run.
 
-Install the dependencies and devDependencies and start the server.
-
 ```sh
 $ pip install vTotalAPI
 ```
