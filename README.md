@@ -43,7 +43,7 @@ From this point "vt" object can be used with any method as mentioned above in de
 - FileReport
 _hash = Hash of the file
 sleep = Sleep time for each request/hash if in bulk
-allinfo = Gives more information on the file (Note: This feature is only available for Private/Enterprise API key)
+allinfo = Gives more information on the file (Note: This feature(allinfo) is only available for Private/Enterprise API key)
 ```sh
 data = vt.FileReport(_hash=string, sleep=int, allinfo=boolean)
 ```
