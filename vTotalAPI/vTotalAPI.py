@@ -260,7 +260,7 @@ class VirusTotal:
             params = {'apikey': self.apikey.strip(), 'resource': resource.strip(), 'comment': comment.strip()}
             if not sleep == None:
                 time.sleep(int(sleep))
-            response = requests.post(url, params=params)
+            response = requests.post(vturl, params=params)
             if response.status_code == 200:
                 return response.json()
             else:
